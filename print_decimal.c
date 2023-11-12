@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * printf_int - prints integer
- * @args: argument to print 
+ * print_int - prints integer
+ * @args: argument to print
  * Return: number of character primted
  */
 int print_int(va_list args)
@@ -11,7 +11,7 @@ int print_int(va_list args)
 	int i = 1;
 
 	n = n / 10;
-	
+
 	if (last < 0)
 	{
 		_putchar("_");
@@ -30,7 +30,7 @@ int print_int(va_list args)
 		num =  n;
 		while (exp > 0)
 		{
-			digit = num/exp;
+			digit = num / exp;
 			_putchar(digit + '0');
 			num = num - (digit *exp);
 			exp = exp / 10;
@@ -38,12 +38,13 @@ int print_int(va_list args)
 		}
 	}
 	_putchar(last + '0');
-	
+
 	return (i);
 }
+
 #include "main.h"
 /**
- * printf_dec - prints decimal
+ * print_dec - prints decimal
  * @args: argument to print
  * Return: number of characters printed
  */
@@ -54,14 +55,13 @@ int print_dec(va_list args)
 	 int i = 1;
 
 	 n = n / 10;
-	 num = n;
 
 	 if (last < 0)
 	 {
 		 _putchar("_");
 		 num = -num;
 		 n = -n;
-		 last = -last;
+		 last = last;
 		 i++;
 	 }
 	 if (num > 0)

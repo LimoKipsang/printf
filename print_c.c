@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * printf_char - prints a char
+ * print_char - prints a char
  * @val: argument
  * Return: 1
  */

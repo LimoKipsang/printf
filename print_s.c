@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_string - prints a string
+ * printf_string - prints a string
  * @val: argument
  * Return: the length of the string
  */
@@ -19,7 +19,7 @@ int printf_string(va_list val)
 			_putchar(str[i]);
 		return (lenght);
 	}
-	else 
+	else
 	{
 		length = _strlen(str);
 		for (i = 0; i < length; i++)
