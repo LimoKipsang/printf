@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *  * print_unsigned - prints integer
- *   * @args: argument to print
- *    * Return: number of character print
- *     */
+ * print_unsigned - prints integer
+ * @args: argument to print
+ * Return: number of character print
+ */
 
 int print_unsigned(va_list args)
 {
